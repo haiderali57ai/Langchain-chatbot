@@ -6,10 +6,10 @@ llm = ChatOllama(
     temp = 0.7  
 )
 message =[
-    #SystemMessage(content="You a helpful AI Assistant."),
-    ("system","You a helpful AI Assistant.")
-    ("human","What is RA")
-    #HumanMessage(content="What is RAG" )
+    SystemMessage(content="You a helpful AI Assistant."),
+    #("system","You a helpful AI Assistant.")
+    #("human","What is RA")
+    HumanMessage(content="What is RAG" )
 ]
  
 response = llm.invoke(message)
